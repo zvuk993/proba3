@@ -29,6 +29,7 @@ body {
 .accordion__label1,
 .accordion__content1 {
   padding: 4px 10px;
+  min-width: 300px;
 }
 
 .accordion__content1 {
@@ -55,6 +56,8 @@ body {
   color: rgb(20, 1, 1);
   text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
   border-radius: 10px;
+
+  
 }
 
 .accordion__label1 {
@@ -90,6 +93,16 @@ body {
   border-top-left-radius: 5px;
 }
 
+.content1-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 6px;
+}
+
+.content1-info-container {
+  display: flex;
+}
+
 .accordion__input,
 .accordion__input1 {
   display: none;
@@ -103,16 +116,3 @@ body {
   display: flex;
   
 }
-
-.content1-info {
-  display: flex;
-  flex-direction: column;
-  padding-right: 6px;
-}
-
-#myButton:target {
-  background-color: rgba(142, 27, 27, 0.1);
-
-}
-
-  
