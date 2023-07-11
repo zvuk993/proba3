@@ -108,7 +108,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .accordion__label,
@@ -123,6 +122,8 @@ body {
 
 .accordion__content1 {
   justify-content: space-between;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .accordion__label,
@@ -148,6 +149,10 @@ body {
   align-items: center;
   color: rgb(20, 1, 1);
   text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
 }
 
 .accordion__label:hover,
@@ -155,19 +160,6 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.accordion__label::after,
-.accordion__label1::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 20px;
-  width: 12px;
-  height: 6px;
-  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
-  background-size: contain;
-  transition: transform 0.4s;
-}
 
 .accordion__content,
 .accordion__content1 {
@@ -188,7 +180,6 @@ body {
 }
 
 .accordion__input:checked ~ .accordion__content {
-
   display: block;
 }
 
@@ -203,10 +194,9 @@ body {
   padding-right: 6px;
 }
 
-.accordion__input:checked ~ .accordion__label::after,
-.accordion__input1:checked ~ .accordion__label1::after {
-  transform: translateY(-50%) rotate(0.5turn);
-}
+#myButton:target {
+  background-color: rgba(142, 27, 27, 0.1);
 
+}
 
   
