@@ -1,0 +1,212 @@
+/**
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(../images/background-3.png);
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-blend-mode:color ;
+}
+
+**/
+
+
+body {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/** ACCORDION MENU**/
+/**
+.accordion-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 240px;
+}
+
+
+.accordion-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+}
+
+.accordion-menu-header {
+  font-size: 26px;
+  color: rgb(20, 1, 1);
+  text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+
+.accordion-menu-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding-top: 0px;
+  padding-bottom: 0x;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 18px;
+  line-height: 50px;
+  display: flex; flex-direction: column;
+  align-items: center;
+  color: rgb(20, 1, 1);
+  text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  background-color: rgb(239, 231, 231);
+}
+
+.accordion-menu-content p {
+  margin: 0;
+  font-size: 18px;
+  
+}
+
+.accordion-menu-item.active .accordion-menu-content {
+  max-height: 1000px;
+  transition: 2s;
+}
+
+**/
+
+/** NOVA ACCORDION**/
+
+.accordion-container {
+  padding-top: 240px;
+
+}
+
+.accordion {
+  border-radius: 5px;
+  overflow: hidden;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.accordion__label,
+.accordion__content {
+  padding: 14px 20px;
+}
+
+.accordion__label1,
+.accordion__content1 {
+  padding: 4px 10px;
+}
+
+.accordion__content1 {
+  justify-content: space-between;
+}
+
+.accordion__label,
+.accordion__label1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(20, 1, 1);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+}
+
+.accordion__label {
+  font-size: 26px;
+  color: rgb(20, 1, 1);
+  text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
+}
+
+.accordion__label1 {
+  font-size: 16px;
+  align-items: center;
+  color: rgb(20, 1, 1);
+  text-shadow: 0 0 2px rgba(232, 12, 12, 0.4);
+}
+
+.accordion__label:hover,
+.accordion__label1:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after,
+.accordion__label1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.accordion__content,
+.accordion__content1 {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__content1 {
+  background-color: rgb(239, 231, 231);
+  font-size: 16px;
+}
+
+.accordion__input,
+.accordion__input1 {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+
+  display: block;
+}
+
+.accordion__input1:checked ~ .accordion__content1 {
+  display: flex;
+  
+}
+
+.content1-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 6px;
+}
+
+.accordion__input:checked ~ .accordion__label::after,
+.accordion__input1:checked ~ .accordion__label1::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+
+  

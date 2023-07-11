@@ -1,0 +1,58 @@
+.header {
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 210px;
+  text-align: center;
+  background-color: rgb(130, 106, 106);
+  background-blend-mode: lighten;
+  background-image: url(../images/background-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-bottom: solid;
+  padding-bottom: 10px;
+  z-index: 1000;
+}
+
+.song-info-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.song-info {
+  font-size: 22px;
+  font-weight: 600;
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.player-and-title-container {
+  position: relative;
+  padding-top: 80px;
+}
+
+.radio-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(20, 1, 1);
+  text-shadow: 0 0 4px rgba(232, 12, 12, 0.4);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 22px;
+  margin: 0;
+  white-space: nowrap;
+}
