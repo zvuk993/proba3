@@ -116,3 +116,17 @@ body {
   display: flex;
   
 }
+
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(233, 231, 231);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
