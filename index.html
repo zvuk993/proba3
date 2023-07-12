@@ -55,7 +55,7 @@
           <div class="accordion__content">
             <div class="accordion">
               <div>
-                <input type="radio" name="example_accordion1" id="section1-1" class="accordion__input1">
+                <input type="checkbox" name="example_accordion1" id="section1-1" class="accordion__input1">
                 <label for="section1-1" class="accordion__label1">Novi Sad</label>
                 <div class="accordion__content1">
                   <div class="content1-info">
@@ -68,7 +68,7 @@
                 </div>
               </div>
               <div>
-                <input type="radio" name="example_accordion1" id="section1-2" class="accordion__input1">
+                <input type="checkbox" name="example_accordion1" id="section1-2" class="accordion__input1">
                 <label for="section1-2" class="accordion__label1">Pančevo</label>
                 <div class="accordion__content1">
                   <div class="content1-info">
@@ -81,7 +81,7 @@
                 </div>
               </div>
               <div>
-                <input type="radio" name="example_accordion1" id="section1-3" class="accordion__input1">
+                <input type="checkbox" name="example_accordion1" id="section1-3" class="accordion__input1">
                 <label for="section1-3" class="accordion__label1">Sombor</label>
                 <div class="accordion__content1">
                   <div class="content1-info">
@@ -151,6 +151,9 @@
     </div>
 
     <script>
+
+    // GLAVNI MENI//  
+
       function click1() {
         if (document.getElementById("section2").checked) {
           document.getElementById("section2").checked = false;
@@ -266,6 +269,41 @@
       document.getElementById("section4").onchange = click4;
       document.getElementById("section5").onchange = click5;
       document.getElementById("section6").onchange = click6;
+
+    //END//GLAVNI MENI//
+
+    //MENI SKOLE TAMBURE//
+
+      function click1_1() {
+          if (document.getElementById("section1-2").checked) {
+            document.getElementById("section1-2").checked = false;
+          }
+          if (document.getElementById("section1-3").checked) {
+            document.getElementById("section1-3").checked = false;
+          }
+        }
+
+        function click1_2() {
+          if (document.getElementById("section1-1").checked) {
+            document.getElementById("section1-1").checked = false;
+          }
+          if (document.getElementById("section1-3").checked) {
+            document.getElementById("section1-3").checked = false;
+          }
+        }
+
+        function click1_3() {
+          if (document.getElementById("section1-1").checked) {
+            document.getElementById("section1-1").checked = false;
+          }
+          if (document.getElementById("section1-2").checked) {
+            document.getElementById("section1-2").checked = false;
+          }
+        }
+
+        document.getElementById("section1-1").onchange = click1_1;
+        document.getElementById("section1-2").onchange = click1_2;
+        document.getElementById("section1-3").onchange = click1_3;
     </script>
   </body>
 </html>
